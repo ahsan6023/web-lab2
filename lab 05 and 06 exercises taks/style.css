@@ -1,0 +1,111 @@
+/* Display Property */
+body{
+    font-family: Arial;
+    margin:0;
+}
+
+header{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Navigation using display inline-block */
+.navbar{
+    background:#555;
+    text-align:center;
+}
+
+.navbar a{
+    display:inline-block;
+    padding:15px;
+    color:white;
+    text-decoration:none;
+}
+
+.navbar a:hover{
+    background:#777;
+}
+
+/* Float Layout */
+.float-section{
+    padding:20px;
+}
+
+.float-img{
+    float:left;
+    margin-right:20px;
+}
+
+/* Clearfix */
+.float-section::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+/* Positioning */
+.relative-box{
+    position:relative;
+    background:lightblue;
+    padding:50px;
+    margin:20px;
+}
+
+.absolute-box{
+    position:absolute;
+    top:10px;
+    right:10px;
+    background:red;
+    color:white;
+    padding:10px;
+}
+
+/* Flexbox Layout */
+.flex-container{
+    display:flex;
+    justify-content:space-around;
+    padding:20px;
+}
+
+.flex-item{
+    background:orange;
+    padding:30px;
+    width:150px;
+    text-align:center;
+}
+
+/* Grid Layout */
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    padding:20px;
+}
+
+.grid-item{
+    background:lightgreen;
+    padding:40px;
+    text-align:center;
+}
+
+/* Sticky Navigation */
+.navbar{
+    position:sticky;
+    top:0;
+}
+
+/* Media Queries */
+@media (max-width:768px){
+
+.flex-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.grid-container{
+    grid-template-columns:1fr;
+}
+
+}

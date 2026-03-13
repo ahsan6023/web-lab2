@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Layout Techniques Lab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>CSS Layout Techniques</h1>
+</header>
+
+<!-- Navigation (Display inline-block) -->
+<nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Flexbox</a>
+    <a href="#">Grid</a>
+    <a href="#">Contact</a>
+</nav>
+
+<!-- Float Layout -->
+<section class="float-section">
+    <img src="https://picsum.photos/200" class="float-img">
+    <p>
+        This section demonstrates floating images with text wrapping.
+        Float was traditionally used for multi column layouts before flexbox
+        and grid were introduced.
+    </p>
+</section>
+
+<!-- Positioning Example -->
+<section class="position-section">
+    <div class="relative-box">
+        Relative Box
+        <div class="absolute-box">Absolute</div>
+    </div>
+</section>
+
+<!-- Flexbox Layout -->
+<section class="flex-container">
+    <div class="flex-item">Card 1</div>
+    <div class="flex-item">Card 2</div>
+    <div class="flex-item">Card 3</div>
+</section>
+
+<!-- Grid Layout -->
+<section class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+</section>
+
+<footer>
+    <p>Responsive Design Example</p>
+</footer>
+
+</body>
+</html>
