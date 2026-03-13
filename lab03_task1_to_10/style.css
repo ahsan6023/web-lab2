@@ -1,0 +1,141 @@
+/* BASIC RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(to right, #00416A, #E4E5E6);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* NAVIGATION */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: #333;
+}
+
+.navbar a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: orange;
+}
+
+/* SELECTORS */
+#unique { color: red; }
+.common { color: green; }
+input[type="text"] { border: 2px solid blue; }
+
+ul li { color: purple; }
+ul > li:first-child { font-weight: bold; }
+
+/* TYPOGRAPHY */
+.font1 { font-family: 'Poppins'; font-size: 20px; }
+.font2 { font-family: 'Roboto'; text-transform: uppercase; }
+.font3 {
+    font-family: 'Playfair Display';
+    text-shadow: 2px 2px 5px gray;
+}
+
+/* BACKGROUNDS */
+.bg-box {
+    height: 100px;
+    margin: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.solid { background: teal; }
+.gradient { background: radial-gradient(circle, purple, black); }
+
+/* IMAGES */
+.circle {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+    transition: transform 0.5s;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+    filter: grayscale(100%);
+}
+
+/* BUTTONS */
+.btn {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.primary {
+    background: linear-gradient(to right, blue, purple);
+    color: white;
+}
+
+.disabled {
+    background: gray;
+}
+
+/* FORM */
+.form input {
+    display: block;
+    margin: 10px;
+    padding: 8px;
+}
+
+.form input:focus {
+    border: 2px solid green;
+}
+
+.form button {
+    background: green;
+    color: white;
+    padding: 10px;
+}
+
+/* CARD */
+.card-box {
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 0 4px 8px gray;
+    transition: transform 0.3s;
+}
+
+.card-box:hover {
+    transform: translateY(-10px);
+}
+
+/* TRANSFORM */
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 20px;
+    transition: transform 1s;
+}
+
+.box:hover {
+    transform: rotate(45deg) scale(1.2);
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
