@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Float-Based Magazine Layout</title>
+
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/float.css">
+</head>
+<body>
+
+<h1>Task 2: Float-Based Magazine Layout</h1>
+
+<div class="container clearfix">
+
+    <!-- Main Content -->
+    <div class="main">
+        <h2>Main Article</h2>
+
+        <img src="https://via.placeholder.com/200"
+             alt="Magazine Image"
+             class="float-img">
+
+        <p>
+            This is a magazine-style layout created using CSS floats.
+            The image is floated to the left and text wraps around it.
+            This technique was commonly used before Flexbox and Grid.
+        </p>
+
+        <p>
+            On smaller screens, this layout becomes a single column
+            using media queries. Floats are cleared properly to
+            avoid layout breaking.
+        </p>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>Sidebar</h3>
+        <ul>
+            <li>Latest News</li>
+            <li>Popular Articles</li>
+            <li>Archives</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

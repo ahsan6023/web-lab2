@@ -1,0 +1,51 @@
+/* float.css */
+
+/* Container */
+.container {
+    width: 100%;
+}
+
+/* Main content */
+.main {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    background: #f4f4f4;
+}
+
+/* Sidebar */
+.sidebar {
+    float: right;
+    width: 28%;
+    padding: 10px;
+    background: #ddd;
+}
+
+/* Floated image */
+.float-img {
+    float: left;
+    margin: 0 15px 10px 0;
+}
+
+/* Clearfix to fix float collapse */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+
+    .main,
+    .sidebar {
+        float: none;
+        width: 100%;
+    }
+
+    .float-img {
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
+}

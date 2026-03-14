@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Navigation</title>
+
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/flexbox.css">
+</head>
+<body>
+
+<h1>Task 4: Flexbox Navigation System</h1>
+
+<!-- Hamburger checkbox (hidden) -->
+<input type="checkbox" id="menu-toggle">
+
+<!-- Navigation -->
+<nav class="navbar">
+    <label for="menu-toggle" class="hamburger">☰</label>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+            <a href="#">Services</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Web</a></li>
+                <li><a href="#">Mobile</a></li>
+                <li><a href="#">Design</a></li>
+            </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Sidebar Navigation -->
+<aside class="sidebar">
+    <h3>Sidebar Menu</h3>
+    <ul>
+        <li>Dashboard</li>
+        <li>Profile</li>
+        <li>Settings</li>
+    </ul>
+</aside>
+<h2>Responsive Form</h2>
+
+<form class="form">
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <input type="submit">
+</form>
+
+</body>
+</html>

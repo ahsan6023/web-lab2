@@ -1,0 +1,157 @@
+/* flexbox.css */
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    background: #222;
+    padding: 10px;
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    background: #444;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #333;
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    display: block;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Hide checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    width: 200px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #222;
+    }
+
+    #menu-toggle:checked + .navbar .nav-links {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        position: static;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
+
+/* ========================= */
+/* Flexbox Card Layout */
+/* ========================= */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ccc;
+    flex: 1;
+}
+
+/* Button always at bottom */
+.card button {
+    margin-top: auto;
+    padding: 8px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile: 1 column */
+@media (max-width: 600px) {
+    .card {
+        flex: 100%;
+    }
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 601px) and (max-width: 1023px) {
+    .card {
+        flex: 48%;
+    }
+}
+
+/* Desktop: 3 columns */
+@media (min-width: 1024px) {
+    .card {
+        flex: 30%;
+    }
+}
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form input {
+    flex: 1 1 200px;
+}

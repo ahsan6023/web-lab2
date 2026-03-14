@@ -1,0 +1,23 @@
+@media (min-width: 768px) {}
+@media (min-width: 1024px) {}
+@media (min-width: 1200px) {}
+@media (min-width: 1400px) {}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: black;
+        color: white;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none;
+    }
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+}

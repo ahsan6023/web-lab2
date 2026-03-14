@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Positioning Challenge</title>
+
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/position.css">
+</head>
+<body>
+
+<!-- Fixed Header -->
+<header class="header">
+    Fixed Header (becomes static on mobile)
+</header>
+
+<div class="page">
+
+    <!-- Sticky Sidebar -->
+    <aside class="sidebar">
+        Sticky Sidebar
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+        <h1>Task 3: CSS Positioning</h1>
+
+        <p>This page demonstrates different CSS positioning techniques.</p>
+
+        <!-- Relative box -->
+        <div class="relative-box">
+            Relative Box
+            <div class="absolute-box">Absolute Box</div>
+        </div>
+
+        <button id="openModal">Open Modal</button>
+
+        <p style="margin-top:600px">
+            Scroll down to see sticky behavior.
+        </p>
+    </main>
+
+</div>
+
+<!-- Modal -->
+<div class="modal">
+    <div class="modal-content">
+        <h2>Modal Dialog</h2>
+        <p>This modal uses absolute positioning.</p>
+    </div>
+</div>
+
+</body>
+</html>
